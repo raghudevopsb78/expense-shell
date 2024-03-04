@@ -52,5 +52,5 @@ dnf install mysql -y &>>$LOG
 Check_Status $?
 
 Print_Task_Heading "Load Schema"
-mysql -h 172.31.14.7 -uroot -p${mysql_root_password} < /app/schema/backend.sql &>>$LOG
+mysql -h mysql-dev.rdevops6a.online -uroot -p${mysql_root_password} < /app/schema/backend.sql &>>$LOG
 Check_Status $?
